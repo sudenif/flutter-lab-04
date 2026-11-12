@@ -1,0 +1,10 @@
+00:00 +0: loading C:/Users/user/.cache/lab2025-lab04/test/bloc_test.dart
+00:00 +0: C:/Users/user/.cache/lab2025-lab04/test/bloc_test.dart: home emits loading then success
+00:00 +1: C:/Users/user/.cache/lab2025-lab04/test/bloc_test.dart: home emits loading then success
+00:00 +2: C:/Users/user/.cache/lab2025-lab04/test/bloc_test.dart: home preserves successful empty response
+00:00 +3: C:/Users/user/.cache/lab2025-lab04/test/bloc_test.dart: home emits failure and can recover on retry
+00:00 +4: C:/Users/user/.cache/lab2025-lab04/test/repository_test.dart: list endpoint parses recipes envelope
+00:00 +5: C:/Users/user/.cache/lab2025-lab04/test/repository_test.dart: empty list is a valid successful response
+00:00 +6: C:/Users/user/.cache/lab2025-lab04/test/repository_test.dart: malformed envelope does not silently become an empty list
+00:00 +7: C:/Users/user/.cache/lab2025-lab04/test/repository_test.dart: connection failure is translated into a readable error
+00:00 +8: All tests passed!

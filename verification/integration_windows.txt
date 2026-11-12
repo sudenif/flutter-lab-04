@@ -1,0 +1,110 @@
+00:00 +0: loading C:/Users/user/.cache/lab2025-lab04/integration_test/app_test.dart
+Building Windows application...                                   252,1s
+√ Built build\windows\x64\runner\Debug\recipe_catalog.exe
+00:00 +0: network failure and retry recover using a real HTTP client
+[38;5;135m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;135m│ [route] | 19:15:05 892ms | Open route named /home[0m
+[38;5;135m│ Arguments: {}[0m
+[38;5;135m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;51m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;51m│ [bloc-event] | 19:15:06 791ms | [0m
+[38;5;51m│ HomeBloc receive event:[0m
+[38;5;51m│ HomeLoad()[0m
+[38;5;51m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m│ [bloc-transition] | 19:15:08 118ms | [0m
+[38;5;49m│ HomeBloc with event HomeLoad[0m
+[38;5;49m│ CURRENT state: [0m
+[38;5;49m│ HomeInitial()[0m
+[38;5;49m│ NEXT state: [0m
+[38;5;49m│ HomeLoadInProgress()[0m
+[38;5;49m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;1m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;1m│ [error] | 19:15:10 377ms | HomeBloc[0m
+[38;5;1m│ Сервер не ответил вовремя. Повторите запрос.[0m
+[38;5;1m│ StackTrace: #0      ContentRepository.getContent (package:recipe_catalog/data/repositories/content_repository.dart:34:7)[0m
+[38;5;1m│ <asynchronous suspension>[0m
+[38;5;1m│ #1      HomeBloc._load (package:recipe_catalog/app/features/home/bloc/home_bloc.dart:20:23)[0m
+[38;5;1m│ <asynchronous suspension>[0m
+[38;5;1m│ #2      Bloc.on.<anonymous closure>.handleEvent (package:bloc/src/bloc.dart:226:13)[0m
+[38;5;1m│ <asynchronous suspension>[0m
+[38;5;1m│ [0m
+[38;5;1m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m│ [bloc-transition] | 19:15:10 388ms | [0m
+[38;5;49m│ HomeBloc with event HomeLoad[0m
+[38;5;49m│ CURRENT state: [0m
+[38;5;49m│ HomeLoadInProgress()[0m
+[38;5;49m│ NEXT state: [0m
+[38;5;49m│ HomeLoadFailure(Сервер не ответил вовремя. Повторите запрос.)[0m
+[38;5;49m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;51m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;51m│ [bloc-event] | 19:15:12 139ms | [0m
+[38;5;51m│ HomeBloc receive event:[0m
+[38;5;51m│ HomeLoad()[0m
+[38;5;51m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m│ [bloc-transition] | 19:15:12 147ms | [0m
+[38;5;49m│ HomeBloc with event HomeLoad[0m
+[38;5;49m│ CURRENT state: [0m
+[38;5;49m│ HomeLoadFailure(Сервер не ответил вовремя. Повторите запрос.)[0m
+[38;5;49m│ NEXT state: [0m
+[38;5;49m│ HomeLoadInProgress()[0m
+[38;5;49m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m│ [bloc-transition] | 19:15:14 174ms | [0m
+[38;5;49m│ HomeBloc with event HomeLoad[0m
+[38;5;49m│ CURRENT state: [0m
+[38;5;49m│ HomeLoadInProgress()[0m
+[38;5;49m│ NEXT state: [0m
+[38;5;49m│ HomeLoadSuccess([Content(1, Classic Margherita Pizza, [Pizza dough, Tomato sauce, Fresh mozzarella cheese, Fresh basil leaves, Olive oil, Salt and pepper to taste], [Preheat the oven to 475°F (245°C)., Roll out the pizza dough and spread tomato sauce evenly., Top with slices of fresh mozzarella and fresh basil leaves., Drizzle with olive oil and season with salt and pepper., Bake in the preheated oven for 12-15 minutes or until the crust is golden brown., Slice and serve hot.], 20, 15, 4, Easy, Italian, 300, 4.6, https://cdn.dummyjson.com/recipe-images/1.webp), Content(2, Vegetarian Stir-Fry, [Tofu, cubed, Broccoli florets, Carrots, sliced, Bell peppers, sliced, Soy sauce, Ginger, minced, Garlic, minced, Sesame oil, Cooked rice for serving], [In a wok, heat sesame oil over medium-high heat., Add minced ginger and garlic, sauté until fragrant., Add cubed tofu and stir-fry until golden brown., Add broccoli, carrots, and bell peppers. Cook until vegetables are tender-crisp., Pour soy sauce over the stir-fry and toss to combine., Serve over cooked rice.], 15, 20, 3, Medium, Asian, 250, 4.7, https://cdn.dummyjson.com/recipe-images/2.webp), Content(3, Chocolate Chip Cookies, [All-purpose flour, Butter, softened, Brown sugar, White sugar, Eggs, Vanilla extract, Baking soda, Salt, Chocolate chips], [Preheat the oven to 350°F (175°C)., In a bowl, cream together softened butter, brown sugar, and white sugar., Beat in eggs one at a time, then stir in vanilla extract., Combine flour, baking soda, and salt. Gradually add to the wet ingredients., Fold in chocolate chips., Drop rounded tablespoons of dough onto ungreased baking sheets., Bake for 10-12 minutes or until edges are golden brown., Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack.], 15, 10, 24, Easy, American, 150, 4.9, https://cdn.dummyjson.com/recipe-images/3.webp), Content(4, Chicken Alfredo Pasta, [Fettuccine pasta, Chicken breast, sliced, Heavy cream, Parmesan cheese, grated, Garlic, minced, Butter, Salt and pepper to taste, Fresh parsley for garnish], [Cook fettuccine pasta according to package instructions., In a pan, sauté sliced chicken in butter until fully cooked., Add minced garlic and cook until fragrant., Pour in heavy cream and grated Parmesan cheese. Stir until the cheese is melted., Season with salt and pepper to taste., Combine the Alfredo sauce with cooked pasta., Garnish with fresh parsley before serving.], 15, 20, 4, Medium, Italian, 500, 4.9, https://cdn.dummyjson.com/recipe-images/4.webp), Content(5, Mango Salsa Chicken, [Chicken thighs, Mango, diced, Red onion, finely chopped, Cilantro, chopped, Lime juice, Jalapeño, minced, Salt and pepper to taste, Cooked rice for serving], [Season chicken thighs with salt and pepper., Grill or bake chicken until fully cooked., In a bowl, combine diced mango, chopped red onion, cilantro, minced jalapeño, and lime juice., Dice the cooked chicken and mix it with the mango salsa., Serve over cooked rice.], 15, 25, 3, Easy, Mexican, 380, 4.9, https://cdn.dummyjson.com/recipe-images/5.webp), Content(6, Quinoa Salad with Avocado, [Quinoa, cooked, Avocado, diced, Cherry tomatoes, halved, Cucumber, diced, Red bell pepper, diced, Feta cheese, crumbled, Lemon vinaigrette dressing, Salt and pepper to taste], [In a large bowl, combine cooked quinoa, diced avocado, halved cherry tomatoes, diced cucumber, diced red bell pepper, and crumbled feta cheese., Drizzle with lemon vinaigrette dressing and toss to combine., Season with salt and pepper to taste., Chill in the refrigerator before serving.], 20, 15, 4, Easy, Mediterranean, 280, 4.4, https://cdn.dummyjson.com/recipe-images/6.webp), Content(7, Tomato Basil Bruschetta, [Baguette, sliced, Tomatoes, diced, Fresh basil, chopped, Garlic cloves, minced, Balsamic glaze, Olive oil, Salt and pepper to taste], [Preheat the oven to 375°F (190°C)., Place baguette slices on a baking sheet and toast in the oven until golden brown., In a bowl, combine diced tomatoes, chopped fresh basil, minced garlic, and a drizzle of olive oil., Season with salt and pepper to taste., Top each toasted baguette slice with the tomato-basil mixture., Drizzle with balsamic glaze before serving.], 15, 10, 6, Easy, Italian, 120, 4.7, https://cdn.dummyjson.com/recipe-images/7.webp), Content(8, Beef and Broccoli Stir-Fry, [Beef sirloin, thinly sliced, Broccoli florets, Soy sauce, Oyster sauce, Sesame oil, Garlic, minced, Ginger, minced, Cornstarch, Cooked white rice for serving], [In a bowl, mix soy sauce, oyster sauce, sesame oil, and cornstarch to create the sauce., In a wok, stir-fry thinly sliced beef until browned. Remove from the wok., Stir-fry broccoli florets, minced garlic, and minced ginger in the same wok., Add the cooked beef back to the wok and pour the sauce over the mixture., Stir until everything is coated and heated through., Serve over cooked white rice.], 20, 15, 4, Medium, Asian, 380, 4.7, https://cdn.dummyjson.com/recipe-images/8.webp), Content(9, Caprese Salad, [Tomatoes, sliced, Fresh mozzarella cheese, sliced, Fresh basil leaves, Balsamic glaze, Extra virgin olive oil, Salt and pepper to taste], [Arrange alternating slices of tomatoes and fresh mozzarella on a serving platter., Tuck fresh basil leaves between the slices., Drizzle with balsamic glaze and extra virgin olive oil., Season with salt and pepper to taste., Serve immediately as a refreshing salad.], 10, 0, 2, Easy, Italian, 200, 4.6, https://cdn.dummyjson.com/recipe-images/9.webp), Content(10, Shrimp Scampi Pasta, [Linguine pasta, Shrimp, peeled and deveined, Garlic, minced, White wine, Lemon juice, Red pepper flakes, Fresh parsley, chopped, Salt and pepper to taste], [Cook linguine pasta according to package instructions., In a skillet, sauté minced garlic in olive oil until fragrant., Add shrimp and cook until pink and opaque., Pour in white wine and lemon juice. Simmer until the sauce slightly thickens., Season with red pepper flakes, salt, and pepper., Toss cooked linguine in the shrimp scampi sauce., Garnish with chopped fresh parsley before serving.], 15, 20, 3, Medium, Italian, 400, 4.3, https://cdn.dummyjson.com/recipe-images/10.webp)])[0m
+[38;5;49m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+00:14 +1: lab4 screens and navigation on a real Windows device
+00:14 +1: network failure and retry recover using a real HTTP client
+[38;5;135m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;135m│ [route] | 19:15:17 467ms | Open route named /home[0m
+[38;5;135m│ Arguments: {}[0m
+[38;5;135m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;51m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;51m│ [bloc-event] | 19:15:17 516ms | [0m
+[38;5;51m│ HomeBloc receive event:[0m
+[38;5;51m│ HomeLoad()[0m
+[38;5;51m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m│ [bloc-transition] | 19:15:17 626ms | [0m
+[38;5;49m│ HomeBloc with event HomeLoad[0m
+[38;5;49m│ CURRENT state: [0m
+[38;5;49m│ HomeInitial()[0m
+[38;5;49m│ NEXT state: [0m
+[38;5;49m│ HomeLoadInProgress()[0m
+[38;5;49m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;219m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;219m│ [http-request] [GET] https://dummyjson.com/recipes?limit=10[0m
+[38;5;219m│ Headers: {[0m
+[38;5;219m│   "Accept": "application/json"[0m
+[38;5;219m│ }[0m
+[38;5;219m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;46m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;46m│ [http-response] [GET] https://dummyjson.com/recipes?limit=10[0m
+[38;5;46m│ Status: 200[0m
+[38;5;46m│ Message: OK[0m
+[38;5;46m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;49m│ [bloc-transition] | 19:15:18 623ms | [0m
+[38;5;49m│ HomeBloc with event HomeLoad[0m
+[38;5;49m│ CURRENT state: [0m
+[38;5;49m│ HomeLoadInProgress()[0m
+[38;5;49m│ NEXT state: [0m
+[38;5;49m│ HomeLoadSuccess([Content(1, Classic Margherita Pizza, [Pizza dough, Tomato sauce, Fresh mozzarella cheese, Fresh basil leaves, Olive oil, Salt and pepper to taste], [Preheat the oven to 475°F (245°C)., Roll out the pizza dough and spread tomato sauce evenly., Top with slices of fresh mozzarella and fresh basil leaves., Drizzle with olive oil and season with salt and pepper., Bake in the preheated oven for 12-15 minutes or until the crust is golden brown., Slice and serve hot.], 20, 15, 4, Easy, Italian, 300, 4.6, https://cdn.dummyjson.com/recipe-images/1.webp), Content(2, Vegetarian Stir-Fry, [Tofu, cubed, Broccoli florets, Carrots, sliced, Bell peppers, sliced, Soy sauce, Ginger, minced, Garlic, minced, Sesame oil, Cooked rice for serving], [In a wok, heat sesame oil over medium-high heat., Add minced ginger and garlic, sauté until fragrant., Add cubed tofu and stir-fry until golden brown., Add broccoli, carrots, and bell peppers. Cook until vegetables are tender-crisp., Pour soy sauce over the stir-fry and toss to combine., Serve over cooked rice.], 15, 20, 3, Medium, Asian, 250, 4.7, https://cdn.dummyjson.com/recipe-images/2.webp), Content(3, Chocolate Chip Cookies, [All-purpose flour, Butter, softened, Brown sugar, White sugar, Eggs, Vanilla extract, Baking soda, Salt, Chocolate chips], [Preheat the oven to 350°F (175°C)., In a bowl, cream together softened butter, brown sugar, and white sugar., Beat in eggs one at a time, then stir in vanilla extract., Combine flour, baking soda, and salt. Gradually add to the wet ingredients., Fold in chocolate chips., Drop rounded tablespoons of dough onto ungreased baking sheets., Bake for 10-12 minutes or until edges are golden brown., Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack.], 15, 10, 24, Easy, American, 150, 4.9, https://cdn.dummyjson.com/recipe-images/3.webp), Content(4, Chicken Alfredo Pasta, [Fettuccine pasta, Chicken breast, sliced, Heavy cream, Parmesan cheese, grated, Garlic, minced, Butter, Salt and pepper to taste, Fresh parsley for garnish], [Cook fettuccine pasta according to package instructions., In a pan, sauté sliced chicken in butter until fully cooked., Add minced garlic and cook until fragrant., Pour in heavy cream and grated Parmesan cheese. Stir until the cheese is melted., Season with salt and pepper to taste., Combine the Alfredo sauce with cooked pasta., Garnish with fresh parsley before serving.], 15, 20, 4, Medium, Italian, 500, 4.9, https://cdn.dummyjson.com/recipe-images/4.webp), Content(5, Mango Salsa Chicken, [Chicken thighs, Mango, diced, Red onion, finely chopped, Cilantro, chopped, Lime juice, Jalapeño, minced, Salt and pepper to taste, Cooked rice for serving], [Season chicken thighs with salt and pepper., Grill or bake chicken until fully cooked., In a bowl, combine diced mango, chopped red onion, cilantro, minced jalapeño, and lime juice., Dice the cooked chicken and mix it with the mango salsa., Serve over cooked rice.], 15, 25, 3, Easy, Mexican, 380, 4.9, https://cdn.dummyjson.com/recipe-images/5.webp), Content(6, Quinoa Salad with Avocado, [Quinoa, cooked, Avocado, diced, Cherry tomatoes, halved, Cucumber, diced, Red bell pepper, diced, Feta cheese, crumbled, Lemon vinaigrette dressing, Salt and pepper to taste], [In a large bowl, combine cooked quinoa, diced avocado, halved cherry tomatoes, diced cucumber, diced red bell pepper, and crumbled feta cheese., Drizzle with lemon vinaigrette dressing and toss to combine., Season with salt and pepper to taste., Chill in the refrigerator before serving.], 20, 15, 4, Easy, Mediterranean, 280, 4.4, https://cdn.dummyjson.com/recipe-images/6.webp), Content(7, Tomato Basil Bruschetta, [Baguette, sliced, Tomatoes, diced, Fresh basil, chopped, Garlic cloves, minced, Balsamic glaze, Olive oil, Salt and pepper to taste], [Preheat the oven to 375°F (190°C)., Place baguette slices on a baking sheet and toast in the oven until golden brown., In a bowl, combine diced tomatoes, chopped fresh basil, minced garlic, and a drizzle of olive oil., Season with salt and pepper to taste., Top each toasted baguette slice with the tomato-basil mixture., Drizzle with balsamic glaze before serving.], 15, 10, 6, Easy, Italian, 120, 4.7, https://cdn.dummyjson.com/recipe-images/7.webp), Content(8, Beef and Broccoli Stir-Fry, [Beef sirloin, thinly sliced, Broccoli florets, Soy sauce, Oyster sauce, Sesame oil, Garlic, minced, Ginger, minced, Cornstarch, Cooked white rice for serving], [In a bowl, mix soy sauce, oyster sauce, sesame oil, and cornstarch to create the sauce., In a wok, stir-fry thinly sliced beef until browned. Remove from the wok., Stir-fry broccoli florets, minced garlic, and minced ginger in the same wok., Add the cooked beef back to the wok and pour the sauce over the mixture., Stir until everything is coated and heated through., Serve over cooked white rice.], 20, 15, 4, Medium, Asian, 380, 4.7, https://cdn.dummyjson.com/recipe-images/8.webp), Content(9, Caprese Salad, [Tomatoes, sliced, Fresh mozzarella cheese, sliced, Fresh basil leaves, Balsamic glaze, Extra virgin olive oil, Salt and pepper to taste], [Arrange alternating slices of tomatoes and fresh mozzarella on a serving platter., Tuck fresh basil leaves between the slices., Drizzle with balsamic glaze and extra virgin olive oil., Season with salt and pepper to taste., Serve immediately as a refreshing salad.], 10, 0, 2, Easy, Italian, 200, 4.6, https://cdn.dummyjson.com/recipe-images/9.webp), Content(10, Shrimp Scampi Pasta, [Linguine pasta, Shrimp, peeled and deveined, Garlic, minced, White wine, Lemon juice, Red pepper flakes, Fresh parsley, chopped, Salt and pepper to taste], [Cook linguine pasta according to package instructions., In a skillet, sauté minced garlic in olive oil until fragrant., Add shrimp and cook until pink and opaque., Pour in white wine and lemon juice. Simmer until the sauce slightly thickens., Season with red pepper flakes, salt, and pepper., Toss cooked linguine in the shrimp scampi sauce., Garnish with chopped fresh parsley before serving.], 15, 20, 3, Medium, Italian, 400, 4.3, https://cdn.dummyjson.com/recipe-images/10.webp)])[0m
+[38;5;49m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;135m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;135m│ [route] | 19:15:19 954ms | Open route named /content/:id[0m
+[38;5;135m│ Arguments: {id: 3}[0m
+[38;5;135m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+00:20 +1: lab4 screens and navigation on a real Windows device
+[38;5;135m┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;135m│ [route] | 19:15:23 39ms | Close route named /content/:id[0m
+[38;5;135m│ Arguments: {id: 3}[0m
+[38;5;135m└──────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+00:21 +2: (tearDownAll)
+00:21 +2: All tests passed!

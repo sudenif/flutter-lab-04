@@ -1,0 +1,42 @@
+{
+  "lab": 4,
+  "sdk": "Flutter 3.47.9 / Dart 3.13.7",
+  "results": [
+    {
+      "step": "format",
+      "command": "flutter/dart format lib test integration_test",
+      "exit_code": 0
+    },
+    {
+      "step": "pub_get",
+      "command": "flutter/dart pub get --offline",
+      "exit_code": 0
+    },
+    {
+      "step": "analyze",
+      "command": "flutter/dart analyze",
+      "exit_code": 0
+    },
+    {
+      "step": "tests",
+      "command": "flutter/dart test --reporter expanded",
+      "exit_code": 0
+    },
+    {
+      "step": "integration_windows",
+      "command": "flutter/dart test integration_test/app_test.dart -d windows",
+      "exit_code": 0
+    },
+    {
+      "step": "build_web",
+      "command": "flutter/dart build web --release --no-wasm-dry-run",
+      "exit_code": 0
+    }
+  ],
+  "android_checked": false,
+  "platforms_checked": [
+    "Windows native integration",
+    "Web release build"
+  ],
+  "date": "2026-11-12"
+}
